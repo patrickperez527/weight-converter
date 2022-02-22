@@ -7,4 +7,10 @@ lbs.addEventListener('input', () => {
   grams.innerHTML = lbs.value / 0.0022046;
   kg.innerHTML = lbs.value / 2.2046;
   oz.innerHTML = lbs.value * 16;
+
+  if (lbs.value === '') {
+    grams.innerText = '';
+    kg.innerText = '';
+    oz.innerText = '';
+  }
 })
