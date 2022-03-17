@@ -4,46 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>Weight Converter</title>
 </head>
-<body>
-  <div class="container pt-5 mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <h1 class="display-4 text-center mb-3">Weight Converter</h1>
-        <form>
-          <div class="input-group mb-3">
-            <input type="number" id="lbsInput" class="form-control" placeholder="Enter weight in pounds...">
-          </div>
-        </form>
-        <div id="output" class="mt-2">
-          <div class="card bg-primary mb-2">
-            <div class="card-block text-white p-3">
-              <h4>Grams:</h4>
-              <div id="gramsOutput"></div>
-            </div>
-          </div>
-  
-          <div class="card bg-success mb-2">
-            <div class="card-block text-white p-3">
-              <h4>Kilograms:</h4>
-              <div id="kgOutput"></div>
-            </div>
-          </div>
-  
-          <div class="card bg-danger mb-2">
-            <div class="card-block text-white p-3">
-              <h4>Ounces:</h4>
-              <div id="ozOutput"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+<body class="bg-light text-dark">
+  <div class="container container-fluid mt-5" style="font-family: 'Poppins', sans-serif;">
+    <h1 class="fw-bold text-center">Weight Converter</h1>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="tonne">
+      <label for="floatingInput" class="fw-bold">tonne</label>
     </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="kilogram">
+      <label for="floatingInput" class="fw-bold">Kilogram</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="gram">
+      <label for="floatingInput" class="fw-bold">Gram</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="miligram">
+      <label for="floatingInput" class="fw-bold">Miligram</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="microgram">
+      <label for="floatingInput" class="fw-bold">Microgram</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="imperial-ton">
+      <label for="floatingInput" class="fw-bold">Imperial ton</label>
+    </div>
+    
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="us-ton">
+      <label for="floatingInput" class="fw-bold">US ton</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="stone">
+      <label for="floatingInput" class="fw-bold">Stone</label>
+    </div>
+
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="pound">
+      <label for="floatingInput" class="fw-bold">Pound</label>
+    </div>
+    
+    <div class="form-floating mb-3 mt-3">
+      <input type="number" class="form-control bg-transparent" id="ounce">
+      <label for="floatingInput" class="fw-bold">Ounce</label>
+    </div>
+
   </div>
-    <script src="script.js"></script>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
